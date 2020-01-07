@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="AllTopics.listeners"/>
+  </listeners>
+  <test parallel="none" name="AssertTitle(failed)">
+    <classes>
+      <class name="AllTopics.HomePage">
+        <methods>
+          <include name="getDown"/>
+        </methods>
+      </class> <!-- AllTopics.HomePage -->
+      <class name="AllTopics.AssertionTitle">
+        <methods>
+          <include name="getStart"/>
+          <include name="getDown"/>
+          <include name="basePageNavigation"/>
+        </methods>
+      </class> <!-- AllTopics.AssertionTitle -->
+      <class name="AllTopics.AssertionNavigationBar">
+        <methods>
+          <include name="getDown"/>
+        </methods>
+      </class> <!-- AllTopics.AssertionNavigationBar -->
+    </classes>
+  </test> <!-- AssertTitle(failed) -->
+</suite> <!-- Failed suite [Suite] -->

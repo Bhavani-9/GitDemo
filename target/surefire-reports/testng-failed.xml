@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]" verbose="0">
+  <listeners>
+    <listener class-name="AllTopics.listeners"/>
+    <listener class-name="Resources.ExtentReporterNG"/>
+  </listeners>
+  <test parallel="none" name="AssertTitle(failed)">
+    <classes>
+      <class name="AllTopics.AssertionNavigationBar">
+        <methods>
+          <include name="getDown"/>
+        </methods>
+      </class> <!-- AllTopics.AssertionNavigationBar -->
+      <class name="AllTopics.AssertionTitle">
+        <methods>
+          <include name="getStart"/>
+          <include name="getDown"/>
+          <include name="validateAppTitle"/>
+        </methods>
+      </class> <!-- AllTopics.AssertionTitle -->
+      <class name="AllTopics.HomePage">
+        <methods>
+          <include name="getDown"/>
+        </methods>
+      </class> <!-- AllTopics.HomePage -->
+    </classes>
+  </test> <!-- AssertTitle(failed) -->
+</suite> <!-- Failed suite [Suite] -->

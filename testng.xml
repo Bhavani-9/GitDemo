@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="AllTopics.listeners" />
+		<listener class-name="Resources.ExtentReporterNG" />
+	</listeners>
+	
+
+	<test name="AssertTesting">
+		<classes>
+			<class name="AllTopics.AssertionNavigationBar" />
+		</classes>
+	</test>
+
+
+<test name="ValidatingHomePage">
+		<classes>
+			<class name="AllTopics.HomePage" />
+		</classes>
+	</test>
+
+	<test name="AssertTitle">
+		<classes>
+			<class name="AllTopics.AssertionTitle" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
