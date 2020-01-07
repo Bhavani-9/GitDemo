@@ -9,6 +9,7 @@ public class portalHomePage {
 	public WebDriver driver;
 	By portalPage=By.name("query");
 	
+	
 	public portalHomePage(WebDriver driver) {
 		// TODO Auto-generated constructor stub
 		this.driver=driver;

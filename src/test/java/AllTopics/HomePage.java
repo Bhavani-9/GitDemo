@@ -19,14 +19,14 @@ public class HomePage extends Base {
 		driver = IntializeDriver();
 		driver.get(prop.getProperty("url"));
 		LandingPage lp = new LandingPage(driver);
-		
+
 		lp.getLogin().click();
 
 		LoginPage lop = new LoginPage(driver);
 		lop.EmailId().sendKeys(emailid);
 		lop.Password().sendKeys(password);
 		lop.Login().click();
-
+		System.out.println("This is Bhavani");
 	}
 
 	@AfterTest
