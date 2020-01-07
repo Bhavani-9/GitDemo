@@ -27,6 +27,9 @@ public class HomePage extends Base {
 		lop.Password().sendKeys(password);
 		lop.Login().click();
 		System.out.println("This is Bhavani");
+		System.out.println("This is Bhavani1");
+		System.out.println("This is Bhavani2");
+		System.out.println("This is Bhavani3");
 	}
 
 	@AfterTest
