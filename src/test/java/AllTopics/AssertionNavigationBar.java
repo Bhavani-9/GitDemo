@@ -22,7 +22,8 @@ public class AssertionNavigationBar extends Base {
 		driver.get(prop.getProperty("url"));
 		LandingPage lp = new LandingPage(driver);
 System.out.println("This is Bhisetti");
-		 
+System.out.println("This is Bhisetti1");
+System.out.println("This is Bhisetti2");
 		 Assert.assertTrue(lp.navigatePage().isDisplayed());
 		 log.info("Successfully navigated");
 	}
